@@ -77,5 +77,5 @@ hit("view");
 document.querySelectorAll(".ch,.mail").forEach(function(a){a.addEventListener("click",function(){hit(a.getAttribute("data-k"));});});
 fetch(A+"views?brand="+B).then(function(r){return r.json()}).then(function(d){if(d&&d.views>0)document.getElementById("vc").textContent=d.views.toLocaleString("en-GB")+" visits";}).catch(function(){});})();</script>
 <script>fetch("counts.json?"+Date.now()).then(function(r){return r.json()}).then(function(d){var c=(d&&d.counts)||{};function f(n){return n>=1e6?(n/1e6).toFixed(1).replace(/\.0$/,"")+"M":n>=1e4?Math.round(n/1e3)+"K":n>=1e3?(n/1e3).toFixed(1).replace(/\.0$/,"")+"K":String(n)}
-document.querySelectorAll(".ch[data-k]").forEach(function(a){var k=a.getAttribute("data-k"),n=c[k];if(n===undefined||n===null)return;var s=document.createElement("span");s.className="cnt";s.textContent=f(n)+(/youtube/.test(k)?" subscribers":" followers");a.appendChild(s);});}).catch(function(){});</script>
+document.querySelectorAll(".ch[data-k]").forEach(function(a){var k=a.getAttribute("data-k"),n=c[k];if(!n)return;var s=document.createElement("span");s.className="cnt";s.textContent=f(n)+(/youtube/.test(k)?" subscribers":" followers");a.appendChild(s);});}).catch(function(){});</script>
 </body></html>
