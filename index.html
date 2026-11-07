@@ -22,6 +22,8 @@ h1{margin:0 0 8px;font-size:34px;font-weight:800;letter-spacing:-.02em}
 .ch:hover{border-color:currentColor;transform:translateY(-1px)}
 .ch svg{width:18px;height:18px;flex:0 0 18px}
 .ch.wide{grid-column:1/-1}
+.ch .cnt{margin-left:auto;font-size:12px;font-weight:700;opacity:.75;white-space:nowrap}
+
 .px{background:#12141B;color:#F2EEE6}.px .bh span,.px .ch svg{color:#FF6B35}
 .huh{background:#0C223A;color:#F0F6FC}.huh .bh span,.huh .ch svg{color:#FF7A1A}
 .tgh{background:#0F1512;color:#E6F2EA}.tgh .bh span,.tgh .ch svg{color:#3DDC84}
@@ -74,4 +76,6 @@ function hit(k){try{fetch(A+"hit",{method:"POST",keepalive:true,headers:{"Conten
 hit("view");
 document.querySelectorAll(".ch,.mail").forEach(function(a){a.addEventListener("click",function(){hit(a.getAttribute("data-k"));});});
 fetch(A+"views?brand="+B).then(function(r){return r.json()}).then(function(d){if(d&&d.views>0)document.getElementById("vc").textContent=d.views.toLocaleString("en-GB")+" visits";}).catch(function(){});})();</script>
+<script>fetch("counts.json?"+Date.now()).then(function(r){return r.json()}).then(function(d){var c=(d&&d.counts)||{};function f(n){return n>=1e6?(n/1e6).toFixed(1).replace(/\.0$/,"")+"M":n>=1e4?Math.round(n/1e3)+"K":n>=1e3?(n/1e3).toFixed(1).replace(/\.0$/,"")+"K":String(n)}
+document.querySelectorAll(".ch[data-k]").forEach(function(a){var k=a.getAttribute("data-k"),n=c[k];if(n===undefined||n===null)return;var s=document.createElement("span");s.className="cnt";s.textContent=f(n)+(/youtube/.test(k)?" subscribers":" followers");a.appendChild(s);});}).catch(function(){});</script>
 </body></html>
