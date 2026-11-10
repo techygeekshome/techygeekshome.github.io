@@ -1,17 +1,18 @@
 ﻿{
     "counts":  {
-                   "tgh-youtube":  910,
-                   "parallax-youtube":  47,
                    "huh-tiktok":  24,
-                   "dodgy-youtube":  3,
-                   "tgh-facebook":  793,
                    "huh-threads":  0,
-                   "dodgy-instagram":  0,
-                   "huh-instagram":  8,
-                   "huh-facebook":  57,
-                   "ls-facebook":  8,
+                   "parallax-youtube":  47,
+                   "dodgy-facebook":  2,
                    "huh-youtube":  37,
-                   "parallax-facebook":  1400
+                   "dodgy-instagram":  0,
+                   "huh-facebook":  57,
+                   "parallax-facebook":  1400,
+                   "tgh-facebook":  794,
+                   "dodgy-youtube":  3,
+                   "ls-facebook":  8,
+                   "huh-instagram":  8,
+                   "tgh-youtube":  910
                },
-    "updated":  "2026-11-09T17:37:42Z"
+    "updated":  "2026-11-10T00:07:44Z"
 }
