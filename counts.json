@@ -1,12 +1,12 @@
 ﻿{
     "counts":  {
-                   "huh-tiktok":  24,
+                   "huh-tiktok":  25,
                    "huh-threads":  0,
                    "parallax-youtube":  47,
                    "dodgy-facebook":  2,
                    "huh-youtube":  38,
                    "dodgy-instagram":  0,
-                   "huh-facebook":  59,
+                   "huh-facebook":  60,
                    "parallax-facebook":  1400,
                    "tgh-facebook":  794,
                    "dodgy-youtube":  3,
@@ -14,5 +14,5 @@
                    "huh-instagram":  7,
                    "tgh-youtube":  910
                },
-    "updated":  "2026-11-10T19:07:42Z"
+    "updated":  "2026-11-11T01:37:41Z"
 }
